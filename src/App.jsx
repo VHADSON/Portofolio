@@ -54,7 +54,7 @@ function App() {
             className="w-12 rounded-md mb-10 sm:hidden"
           />
           <p className="text-base/loose mb-10">
-            Hi, perkenalkan saya Diky Prayoga, seorang Front End Web Developer
+            Hi, perkenalkan saya Revaldo Ramadana, seorang Front End Web Developer
             dan Designer untuk UI/UX Design maupun Product Digital, Saya percaya
             bahwa desain dan fungsionalitas harus berjalan beriringan, sehingga
             setiap proyek yang saya kembangkan tidak hanya terlihat menarik
