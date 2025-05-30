@@ -4,18 +4,18 @@ import { listTools, listProyek } from "./data";
 function App() {
   return (
     <>
-      <div className="hero grid md:grid-cols-2 items-center sm:ml-4 sm:mr-4 md:mr-15 pt-10 xl:gap-0 gap-6 grid-cols-1">
+      <div className="hero grid md:grid-cols-2 items-center sm:ml-4 sm:mr-4 md:mr-15 pt-10 xl:gap-0 gap-6 grid-cols-1 selection:bg-violet-500">
         <div>
           <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
-            {/* Image  */} 
+            {/* Image  */}
             <img
               src={DataImage.HeroImage}
               alt="Hero Image"
-              loading="lazy"
               className="w-10 rounded-md"
+              loading="lazy"
             />
             {/* Image  */}
-            <q>"Kode yang indah, lahir dari ketekunan.😊"</q>
+            <q>Kode yang indah, lahir dari ketekunan.😊</q>
           </div>
           <h1 className="text-5xl/tight font-bold mb-6">
             Hi, Saya Revaldo Ramadana
@@ -29,13 +29,13 @@ function App() {
           <div className="flex items-center sm:gap-4 gap-2">
             <a
               href="#"
-              className="bg-violet-700 p-4 rounded-2xl hover:bg-violet-500"
+              className="bg-violet-700 p-4 rounded-2xl duration-200 hover:bg-violet-500"
             >
               Download CV <i class="ri-download-line ri-lg"></i>
             </a>
             <a
               href="#"
-              className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600"
+              className="bg-zinc-700 p-4 rounded-2xl duration-200 hover:bg-zinc-600"
             >
               Lihat Proyek <i class="ri-arrow-down-line"></i>
             </a>
@@ -45,22 +45,22 @@ function App() {
         <img
           src={DataImage.HeroImage}
           alt="Hero Image"
-          loading="lazy"
           className="w-[500px] sm:ml-auto md:ml-auto sm:mr-auto md:mr-auto mt-10 xl:mr-10 rounded-4xl"
+          loading="lazy"
         />
         {/* Image  */}
       </div>
 
       {/* Tentang */}
 
-      <div className="tentang mt-32 py-10">
+      <div className="tentang mt-32 py-10 selection:bg-violet-500">
         <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg">
           {/* Image  */}
           <img
             src={DataImage.HeroImage}
             alt="Hero Image"
-            loading="lazy"
             className="w-12 rounded-md mb-10 sm:hidden"
+            loading="lazy"
           />
           {/* Image  */}
           <p className="text-base/loose mb-10">
@@ -76,8 +76,8 @@ function App() {
             <img
               src={DataImage.HeroImage}
               alt="Image"
-              loading="lazy"
               className="w-12 rounded-md sm:block hidden"
+              loading="lazy"
             />
             {/* Image  */}
             <div className="flex items-center gap-6">
@@ -97,7 +97,7 @@ function App() {
           </div>
         </div>
 
-        <div className="tools mt-23">
+        <div className="tools mt-23 selection:bg-violet-500">
           <h1>Tools yang dipakai</h1>
           <p className="xl:w-2/5 lg:w-2/4 mc:w-2/3 sm:w-3/4 w-full text-base/loose opacity-50">
             Berikut ini beberapa tools yang digunakan untuk pembuatan website
@@ -109,7 +109,7 @@ function App() {
             {/* Grid Card Tentang */}
             {listTools.map((tool) => (
               <div
-                className="flex items-center gap-2 p-3 border border-zinc-600 rounded-md
+                className="flex items-center gap-2 p-3 border border-zinc-600 rounded-md duration-200
                 hover:bg-zinc-800 group"
                 key={tool.id}
               >
@@ -117,8 +117,8 @@ function App() {
                 <img
                   src={tool.gambar}
                   alt="Tools Image"
-                  loading="lazy"
                   className="w-14 bg-zinc-800 p-1 group-hover:bg-zinc-900"
+                  loading="lazy"
                 />
                 {/* Image  */}
                 <div>
@@ -130,11 +130,11 @@ function App() {
           </div>
         </div>
       </div>
-      
+
       {/* Tentang */}
 
       {/* Proyek */}
-      <div className="proyek mt-32 py-20">
+      <div className="proyek mt-32 py-20 selection:bg-violet-500">
         <h1 className="text-center text-4xl font-bold mb-2">Proyek</h1>
         <p className="text-base/loose text-center opacity-50">
           Berikut beberapa proyek yang telah saya buat
@@ -149,7 +149,7 @@ function App() {
                 src={proyek.gambar}
                 alt="Proyek Image"
                 loading="lazy"
-                className="w-full rounded-2xl"
+                className="w-full rounded-2xl transition-"
               />
               <div>
                 <h1 className="text-2xl font-bold my-4">{proyek.nama}</h1>
@@ -167,7 +167,7 @@ function App() {
                 <div className="mt-8 text-center">
                   <a
                     href="#"
-                    className="bg-violet-700 p-3 rounded-lg block border border-zinc-600 hover:bg-violet-600"
+                    className="bg-violet-700 p-3 rounded-lg block border border-zinc-600 duration-300 hover:bg-violet-500"
                   >
                     Lihat Website
                   </a>
@@ -178,6 +178,69 @@ function App() {
         </div>
       </div>
       {/* Proyek */}
+
+      {/* Kontak */}
+      <div className="kontak mt-32 p-10 selection:bg-violet-500">
+        <h1 className="text-4xl mb-2 text-center font-bold">kontak</h1>
+        <p className="text-base/loose mb-14 text-center opacity-50">
+          Mari terhubung dengan saya.
+        </p>
+        <form
+          action=""
+          className="bg-zinc-800 p-10 w-fit mx-auto rounded-md"
+          autoComplete="off"
+        >
+          <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-2">
+              <label className="font-semibold after:ml-0.5 after:text-red-500 after:content-['*']">
+                Nama Lengkap
+              </label>
+              <input
+                type="text"
+                name="nama"
+                placeholder="Masukkan Nama..."
+                className="border border-zinc-500 p-2 rounded-b-md"
+                required
+              />
+            </div>
+            <div className="flex flex-col gap-6">
+              <label className="font-semibold after:ml-0.5 after:text-red-500 after:content-['*']">
+                Email
+              </label>
+              <input
+                type="Email"
+                name="Email"
+                placeholder="Masukkan Email..."
+                className="border border-zinc-500 p-2 rounded-b-md "
+                required
+              />
+            </div>
+            <div className="flex flex-col gap-6">
+              <label htmlFor="pesan" className="font-semibold">
+                Pesan
+              </label>
+              <textarea
+                name="pesan"
+                id="pesan"
+                cols="45"
+                rows="7"
+                placeholder="Pesan..."
+                className="border border-zinc-500 p-2 rounded-b-md"
+                required
+              ></textarea>
+            </div>
+            <div className="flex flex-col gap-6">
+              <button
+                type="submit"
+                className="duration-300 hover:text-violet-600"
+              >
+                Kirim Pesan
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      {/* Kontak */}
     </>
   );
 }
