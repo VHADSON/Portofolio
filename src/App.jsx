@@ -186,7 +186,8 @@ function App() {
           Mari terhubung dengan saya.
         </p>
         <form
-          action="https://formsubmit.co/revaldoramadan914@gmail.com" method="POST"
+          action="https://formsubmit.co/revaldoramadana914@gmail.com"
+          method="POST"
           className="bg-zinc-800 p-10 w-full sm:ml-auto md:ml-auto sm:mr-auto md:mr-auto mt-10 xl:mr-10 sm: md rounded-md"
           autoComplete="off"
         >
