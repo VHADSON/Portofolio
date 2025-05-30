@@ -187,7 +187,7 @@ function App() {
         </p>
         <form
           action="https://formsubmit.co/revaldoramadan914@email.com" method="POST"
-          className="bg-zinc-800 p-10 xl:w-2/3 lg:w-3/4 w-fit mx-auto  md rounded-md"
+          className="bg-zinc-800 p-10 w-full sm:ml-auto md:ml-auto sm:mr-auto md:mr-auto mt-10 xl:mr-10 sm: md rounded-md"
           autoComplete="off"
         >
           <div className="flex flex-col gap-6">
