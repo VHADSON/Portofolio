@@ -186,7 +186,7 @@ function App() {
           Mari terhubung dengan saya.
         </p>
         <form
-          action=""
+          action="https://formsubmit.co/revaldoramadan914@email.com" method="POST"
           className="bg-zinc-800 p-10 w-fit mx-auto rounded-md"
           autoComplete="off"
         >
@@ -232,7 +232,7 @@ function App() {
             <div className="flex flex-col gap-6">
               <button
                 type="submit"
-                className="duration-300 hover:text-violet-600"
+                className="bg-violet-800 p-3 rounded-lg block border border-zinc-600 duration-300 hover:bg-violet-500"
               >
                 Kirim Pesan
               </button>
