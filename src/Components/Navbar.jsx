@@ -19,9 +19,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="navbar py-7 flex items-center justify-between">
+    <div className="navbar py-7 flex items-center justify-between bg-zinc-800 rounded-b-2xl">
       <div className="logo">
-        <h1 className="text-3xl font-bold bg-white text-black p-1 md:bg-transparent md:text-white">
+        <h1 className="text-3xl font-bold text-white p-1 md:bg-transparent sm:ml-6 md:text-white">
           Portofolio
         </h1>
       </div>
@@ -32,22 +32,22 @@ const Navbar = () => {
          }`}
       >
         <li>
-          <a href="#" className="sm:text-lg text-base font-medium">
+          <a href="#" className="sm:text-lg transition duration-300 hover:text-violet-800 hover:scale-105 text-base font-medium">
             Beranda
           </a>
         </li>
         <li>
-          <a href="#" className="sm:text-lg text-base font-medium">
+          <a href="#" className="sm:text-lg transition duration-300 hover:text-violet-800 text-base font-medium">
             Tentang
           </a>
         </li>
         <li>
-          <a href="#" className="sm:text-lg text-base font-medium">
+          <a href="#" className="sm:text-lg transition duration-300 hover:text-violet-800 text-base font-medium">
             Proyek
           </a>
         </li>
         <li>
-          <a href="#" className="sm:text-lg text-base font-medium">
+          <a href="#" className="sm:text-lg transition duration-300 hover:text-violet-800 text-base font-medium">
             Kontak
           </a>
         </li>

@@ -4,10 +4,10 @@ import { listTools, listProyek } from "./data";
 function App() {
   return (
     <>
-      <div className="hero grid md:cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
+      <div className="hero grid md:grid-cols-2 items-center sm:ml-4 sm:mr-4 md:mr-15 pt-10 xl:gap-0 gap-6 grid-cols-1">
         <div>
           <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
-            {/* Image  */}
+            {/* Image  */} 
             <img
               src={DataImage.HeroImage}
               alt="Hero Image"
@@ -15,7 +15,7 @@ function App() {
               className="w-10 rounded-md"
             />
             {/* Image  */}
-            <a>Kode yang indah, lahir dari ketekunan.😊</a>
+            <q>"Kode yang indah, lahir dari ketekunan.😊"</q>
           </div>
           <h1 className="text-5xl/tight font-bold mb-6">
             Hi, Saya Revaldo Ramadana
@@ -29,7 +29,7 @@ function App() {
           <div className="flex items-center sm:gap-4 gap-2">
             <a
               href="#"
-              className="bg-violet-700 p-4 rounded-2xl hover:bg-violet-600"
+              className="bg-violet-700 p-4 rounded-2xl hover:bg-violet-500"
             >
               Download CV <i class="ri-download-line ri-lg"></i>
             </a>
@@ -41,11 +41,14 @@ function App() {
             </a>
           </div>
         </div>
+        {/* Image  */}
         <img
           src={DataImage.HeroImage}
           alt="Hero Image"
-          className="w-[500px] md:ml-auto rounded-b-4xl"
+          loading="lazy"
+          className="w-[500px] sm:ml-auto md:ml-auto sm:mr-auto md:mr-auto mt-10 xl:mr-10 rounded-4xl"
         />
+        {/* Image  */}
       </div>
 
       {/* Tentang */}
@@ -69,11 +72,14 @@ function App() {
             optimal.
           </p>
           <div className="flex items-center justify-between">
+            {/* Image  */}
             <img
               src={DataImage.HeroImage}
               alt="Image"
+              loading="lazy"
               className="w-12 rounded-md sm:block hidden"
             />
+            {/* Image  */}
             <div className="flex items-center gap-6">
               <div>
                 <h1 className="text-4xl mb-1">
