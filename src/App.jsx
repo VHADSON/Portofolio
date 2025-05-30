@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <div className="hero grid md:grid-cols-2 items-center sm:ml-4 sm:mr-4 md:mr-15 pt-10 xl:gap-0 gap-6 grid-cols-1 selection:bg-violet-500">
-        <div>
+        <div className="animate__animated animate__fadeInUp">
           <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
             {/* Image  */}
             <img
@@ -31,13 +31,13 @@ function App() {
               href="#"
               className="bg-violet-700 p-4 rounded-2xl duration-200 hover:bg-violet-500"
             >
-              Download CV <i class="ri-download-line ri-lg"></i>
+              Download CV <i className="ri-download-line ri-lg"></i>
             </a>
             <a
               href="#"
               className="bg-zinc-700 p-4 rounded-2xl duration-200 hover:bg-zinc-600"
             >
-              Lihat Proyek <i class="ri-arrow-down-line"></i>
+              Lihat Proyek <i className="ri-arrow-down-line"></i>
             </a>
           </div>
         </div>
@@ -45,7 +45,7 @@ function App() {
         <img
           src={DataImage.HeroImage}
           alt="Hero Image"
-          className="w-[500px] sm:ml-auto md:ml-auto sm:mr-auto md:mr-auto mt-10 xl:mr-10 rounded-4xl"
+          className="w-[500px] sm:ml-auto md:ml-auto sm:mr-auto md:mr-auto mt-10 xl:mr-10 rounded-4xl animate__animated animate__fadeInUp"
           loading="lazy"
         />
         {/* Image  */}
@@ -54,7 +54,11 @@ function App() {
       {/* Tentang */}
 
       <div className="tentang mt-32 py-10 selection:bg-violet-500">
-        <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg">
+        <div
+          className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           {/* Image  */}
           <img
             src={DataImage.HeroImage}
@@ -98,8 +102,20 @@ function App() {
         </div>
 
         <div className="tools mt-23 selection:bg-violet-500">
-          <h1>Tools yang dipakai</h1>
-          <p className="xl:w-2/5 lg:w-2/4 mc:w-2/3 sm:w-3/4 w-full text-base/loose opacity-50">
+          <h1
+            className="text-4xl/smug font-bold mb-4"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
+            Tools yang dipakai
+          </h1>
+          <p
+            className="xl:w-2/5 lg:w-2/4 mc:w-2/3 sm:w-3/4 w-full text-base/loose opacity-50"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
             Berikut ini beberapa tools yang digunakan untuk pembuatan website
             ataupun design
           </p>
@@ -112,6 +128,9 @@ function App() {
                 className="flex items-center gap-2 p-3 border border-zinc-600 rounded-md duration-200
                 hover:bg-zinc-800 group"
                 key={tool.id}
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay={tool.dad}
               >
                 {/* Image  */}
                 <img
@@ -144,7 +163,13 @@ function App() {
           {" "}
           {/* Grid Card Proyek*/}
           {listProyek.map((proyek) => (
-            <div key={proyek.id} className="p-4 bg-zinc-800 rounded-md">
+            <div
+              key={proyek.id}
+              className="p-4 bg-zinc-800 rounded-md"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay={proyek.dad}
+            >
               <img
                 src={proyek.gambar}
                 alt="Proyek Image"
@@ -181,8 +206,19 @@ function App() {
 
       {/* Kontak */}
       <div className="kontak mt-32 p-10 selection:bg-violet-500">
-        <h1 className="text-4xl mb-2 text-center font-bold">kontak</h1>
-        <p className="text-base/loose mb-14 text-center opacity-50">
+        <h1
+          className="text-4xl mb-2 text-center font-bold"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          kontak
+        </h1>
+        <p
+          className="text-base/loose mb-14 text-center opacity-50"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+        >
           Mari terhubung dengan saya.
         </p>
         <form
@@ -190,6 +226,9 @@ function App() {
           method="POST"
           className="bg-zinc-800 p-10 w-full sm:ml-auto md:ml-auto sm:mr-auto md:mr-auto mt-10 xl:mr-10 sm: md rounded-md"
           autoComplete="off"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="500"
         >
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-2">
