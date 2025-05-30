@@ -92,7 +92,7 @@ export const listTools = [
   },
   {
     id: 11,
-    gambar: Tools10,
+    gambar: Tools11,
     nama: "Canva",
     ket: "Design App",
     dad: "1100",
