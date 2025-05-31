@@ -34,7 +34,7 @@ function App() {
               Download CV <i className="ri-download-line ri-lg"></i>
             </a>
             <a
-              href="#"
+              href="#proyek"
               className="bg-zinc-700 p-4 rounded-2xl duration-200 hover:bg-zinc-600"
             >
               Lihat Proyek <i className="ri-arrow-down-line"></i>
@@ -53,11 +53,12 @@ function App() {
 
       {/* Tentang */}
 
-      <div className="tentang mt-32 py-10 selection:bg-violet-500">
+      <div className="tentang mt-32 py-10 selection:bg-violet-500" id="tentang">
         <div
           className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg"
           data-aos="fade-up"
           data-aos-duration="1000"
+          data-aos-once="ture"
         >
           {/* Image  */}
           <img
@@ -107,6 +108,7 @@ function App() {
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="300"
+            data-aos-once="ture"
           >
             Tools yang dipakai
           </h1>
@@ -115,6 +117,7 @@ function App() {
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="300"
+            data-aos-once="ture"
           >
             Berikut ini beberapa tools yang digunakan untuk pembuatan website
             ataupun design
@@ -131,6 +134,7 @@ function App() {
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay={tool.dad}
+                data-aos-once="ture"
               >
                 {/* Image  */}
                 <img
@@ -153,7 +157,7 @@ function App() {
       {/* Tentang */}
 
       {/* Proyek */}
-      <div className="proyek mt-32 py-20 selection:bg-violet-500">
+      <div className="proyek mt-32 py-20 selection:bg-violet-500" id="proyek">
         <h1 className="text-center text-4xl font-bold mb-2">Proyek</h1>
         <p className="text-base/loose text-center opacity-50">
           Berikut beberapa proyek yang telah saya buat
@@ -169,6 +173,7 @@ function App() {
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay={proyek.dad}
+              data-aos-once="ture"
             >
               <img
                 src={proyek.gambar}
@@ -205,11 +210,12 @@ function App() {
       {/* Proyek */}
 
       {/* Kontak */}
-      <div className="kontak mt-32 p-10 selection:bg-violet-500">
+      <div className="kontak mt-32 p-0.5 selection:bg-violet-500" id="kontak">
         <h1
           className="text-4xl mb-2 text-center font-bold"
           data-aos="fade-up"
           data-aos-duration="1000"
+          data-aos-once="ture"
         >
           kontak
         </h1>
@@ -218,6 +224,7 @@ function App() {
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="300"
+          data-aos-once="ture"
         >
           Mari terhubung dengan saya.
         </p>
@@ -229,6 +236,7 @@ function App() {
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="500"
+          data-aos-once="ture"
         >
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-2">

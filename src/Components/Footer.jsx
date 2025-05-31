@@ -3,13 +3,13 @@ const Footer = () => {
     <div className="mt-32 py-4 flex md:flex-row flex-col gap-6 md:gap-0 justify-between items-center">
       <h1 className="text-2xl font-bold">Portfolio</h1>
       <div className="flex gap-7">
-        <a href="#" className="duration-300 hover:text-violet-500">
+        <a href="#beranda" className="duration-300 hover:text-violet-500">
           Beranda
         </a>
-        <a href="#" className="duration-300 hover:text-violet-500">
+        <a href="#tentang" className="duration-300 hover:text-violet-500">
           Tentang
         </a>
-        <a href="#" className="duration-300 hover:text-violet-500">
+        <a href="#proyek" className="duration-300 hover:text-violet-500">
           Proyek
         </a>
       </div>

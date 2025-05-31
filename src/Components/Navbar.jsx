@@ -32,22 +32,22 @@ const Navbar = () => {
          }`}
       >
         <li>
-          <a href="#" className="sm:text-lg duration-300 hover:text-violet-500 hover:scale-105 text-base font-medium">
+          <a href="#beranda" className="sm:text-lg duration-300 hover:text-violet-500 hover:scale-105 text-base font-medium">
             Beranda
           </a>
         </li>
         <li>
-          <a href="#" className="sm:text-lg duration-300 hover:text-violet-500 text-base font-medium">
+          <a href="#tentang" className="sm:text-lg duration-300 hover:text-violet-500 text-base font-medium">
             Tentang
           </a>
         </li>
         <li>
-          <a href="#" className="sm:text-lg duration-300 hover:text-violet-500 text-base font-medium">
+          <a href="#proyek" className="sm:text-lg duration-300 hover:text-violet-500 text-base font-medium">
             Proyek
           </a>
         </li>
         <li>
-          <a href="#" className="sm:text-lg duration-300 hover:text-violet-500 text-base font-medium">
+          <a href="#kontak" className="sm:text-lg duration-300 hover:text-violet-500 text-base font-medium">
             Kontak
           </a>
         </li>
