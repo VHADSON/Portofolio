@@ -121,6 +121,7 @@ export const listProyek = [
     desk: "Website ini adalah karya pertama yang saya terbitkan secara public dan karna inilah saya mencintai bagaimana pembuatan website itu dibuat",
     tools: ["HTML", "CSS", "Bootsrap"],
     dad: "200",
+    url: "https://bootstrap-jumbotron.netlify.app/"
   },
   {
     id: 2,
@@ -129,6 +130,7 @@ export const listProyek = [
     desk: "Linqlean adalah platform laundry online yang memudahkan Anda untuk membersihkanpakaian dan barang-barang lainnya dengan mudah dan efisien. Dengan Linqlean, Anda tidak perlu lagi repot-repot pergi ke laundryatau menunggu pakaian Anda selesai dicuci. Kami hadir untuk memberikan solusi laundry yang cepat, mudah, dan terpercaya.",
     tools: ["Wordpress"],
     dad: "300",
+    url: "https://linqlean.space/"
   },
   {
     id: 3,
@@ -141,10 +143,11 @@ export const listProyek = [
   {
     id: 4,
     gambar: Proyek4,
-    nama: "Website Course",
+    nama: "Web 3D",
     desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["Vite", "ReactJS", "Bootstrap", "AOS"],
+    tools: ["Vite", "ReactJS", "TailwindCss", "Spline"],
     dad: "500",
+    url: "https://3d-react-tailwind-spline.netlify.app/"
   },
   {
     id: 5,

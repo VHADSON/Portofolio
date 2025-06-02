@@ -195,12 +195,23 @@ function App() {
                   ))}
                 </div>
                 <div className="mt-8 text-center">
-                  <a
-                    href="#"
-                    className="bg-violet-700 p-3 rounded-lg block border border-zinc-600 duration-300 hover:bg-violet-500"
-                  >
-                    Lihat Website
-                  </a>
+                  {proyek.url && proyek.url !== "#" ? (
+                    <a
+                      href={proyek.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-violet-700 p-3 rounded-lg block border border-zinc-600 duration-300 hover:bg-violet-500"
+                    >
+                      Lihat Website
+                    </a>
+                  ) : (
+                    <button
+                      disabled
+                      className="bg-zinc-600 p-3 rounded-lg block border border-zinc-600 duration-300 cursor-not-allowed opacity-50"
+                    >
+                      Coming Soon
+                    </button>
+                  )}
                 </div>
               </div>
             </div>
