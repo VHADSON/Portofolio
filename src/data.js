@@ -118,19 +118,19 @@ export const listProyek = [
     id: 1,
     gambar: Proyek1,
     nama: "Website Valorant Guide",
-    desk: "Website ini adalah karya pertama yang saya terbitkan secara public dan karna inilah saya mencintai bagaimana pembuatan website itu dibuat",
+    desk: "Website ini adalah kali pertama saya terbitkan di saat masih duduk SMK.",
     tools: ["HTML", "CSS", "Bootsrap"],
     dad: "200",
-    url: "https://bootstrap-jumbotron.netlify.app/"
+    url: "https://bootstrap-jumbotron.netlify.app/",
   },
   {
     id: 2,
     gambar: Proyek2,
     nama: "Platform Laundry",
-    desk: "Linqlean adalah platform laundry online yang memudahkan Anda untuk membersihkanpakaian dan barang-barang lainnya dengan mudah dan efisien. Dengan Linqlean, Anda tidak perlu lagi repot-repot pergi ke laundryatau menunggu pakaian Anda selesai dicuci. Kami hadir untuk memberikan solusi laundry yang cepat, mudah, dan terpercaya.",
+    desk: "Linqlean adalah platform laundry online yang memudahkan Anda untuk membersihkan pakaian dan barang-barang lainnya dengan mudah dan efisien. Dengan Linqlean, Anda tidak perlu lagi repot-repot pergi ke laundry atau menunggu pakaian Anda selesai dicuci. Linqlean hadir untuk memberikan solusi laundry yang cepat, mudah, dan terpercaya.",
     tools: ["Wordpress"],
     dad: "300",
-    url: "https://linqlean.space/"
+    url: "https://linqlean.space/",
   },
   {
     id: 3,
@@ -144,10 +144,10 @@ export const listProyek = [
     id: 4,
     gambar: Proyek4,
     nama: "Web 3D",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
+    desk: "Project latihan bagaimana cara membuat navbar, icon, animasi yg interaktif, responsive yg sedikit kompleks dan implementasi 3D ke dalam website dengan spline yg saya ikuti di youtube.",
     tools: ["Vite", "ReactJS", "TailwindCss", "Spline"],
     dad: "500",
-    url: "https://3d-react-tailwind-spline.netlify.app/"
+    url: "https://3d-react-tailwind-spline.netlify.app/",
   },
   {
     id: 5,
